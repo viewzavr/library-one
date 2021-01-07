@@ -17,5 +17,5 @@ export default function setup(vz) {
     }
   }
   
-  return Promise.all( promises );
+  return Promise.allSettled( promises );
 }

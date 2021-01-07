@@ -30,8 +30,11 @@ in Viewzavr type table as their modules loaded.
 
 # Notes
 
-* Check if user module returned promise itself and resolve only when it resolved.
+* N1 Check if user module returned promise itself and resolve only when it resolved.
 Probably not required if we will handle new types (P2).
+
+* N2 Maybe keep links to github repos as ordinal and transform them dynamically using custom proxy, jsdelivr, so on.
+It sounds connacently with idea that library is just js object (thus user may decide how to load things from it).
 
 # License
 

@@ -20,11 +20,18 @@ import setup_library_one from "https://cdn.jsdelivr.net/gh/viewzavr/library-one@
 
 # Future plans
 
-* Make a "checkbox" installation of modules/libraries.
+* P1 Make a "checkbox" installation of modules/libraries.
 Thus only things that are selected by a user will be loaded.
 
-* Improve Viewzavr for async appearance of types. Thus we may load scene and create objects as their types appear
+* P2 Improve Viewzavr for async appearance of types. Thus we may load scene and create objects as their types appear
 in Viewzavr type table as their modules loaded.
+
+* P3 Maybe store library just as a js dictionary and let user to do anything with it.
+
+# Notes
+
+* Check if user module returned promise itself and resolve only when it resolved.
+Probably not required if we will handle new types (P2).
 
 # License
 

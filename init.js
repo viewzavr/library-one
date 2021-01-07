@@ -10,6 +10,7 @@ export default function setup(vz) {
     try {
       var p = import( arr[i] );
       p.then( function(module) {
+        console.log("library-one: module loaded, calling it's setup",arr[i]);
         module.default( vz );
       });
     } catch (err) {

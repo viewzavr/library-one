@@ -7,8 +7,15 @@ and thus make them available to everyone who import this library.
 
 ```
 import setup_library_one from "https://cdn.jsdelivr.net/gh/viewzavr/library-one@master/init.js";
+setup_library_one(vz).then( function() {
+ ....
+ vz.restoreFromHash();
+ } );
+```
 
-setup_library_one(vz).then( .... );
+or, to refresh faster, use specific revision:
+```
+import setup_library_one from "https://cdn.jsdelivr.net/gh/viewzavr/library-one@d4c9154/init.js";
 ```
 
 # Future plans

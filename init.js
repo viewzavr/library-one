@@ -1,6 +1,7 @@
 // insert here links to modules and libraries
 
 var arr = [
+  "https://cdn.jsdelivr.net/gh/viewzavr/visualization-components@master/init.js",
   "https://cdn.jsdelivr.net/gh/pavelvasev/vr-points-game@master/krako.js",
   "https://cdn.jsdelivr.net/gh/pavelvasev/vr-points-game@master/points-game/init.js"
 ];

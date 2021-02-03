@@ -1,38 +1,28 @@
 // insert here links to modules and libraries
 
-var arr = [
-  "https://cdn.jsdelivr.net/gh/viewzavr/visualization-components@master/init.js",
-  "https://cdn.jsdelivr.net/gh/pavelvasev/vr-points-game@master/krako.js",
-  "https://cdn.jsdelivr.net/gh/pavelvasev/vr-points-game@master/points-game/init.js"
-];
+export function setup( vz, player ) {
 
-//////////////////////////////
-// our setup function here loads things by import(..) because
-// statical import will break an app on any error.
+  var table = {
+  "vis-comps": {
+    title: "Visualization components",
+    info: "....",
+    url: "https://viewlang.ru/viewzavr-apps/visualization-components/init.js"
+  },
 
-function load( src ) {
-  var p = import( src );
+  "krakozabra": {
+    title: "Krakozabra 3d",
+    info: "a figure of krakozabra",
+    //url: "https://cdn.jsdelivr.net/gh/pavelvasev/vr-points-game@master/krako.js"
+    url: "https://viewlang.ru/viewzavr-apps/vr-points-game/krako.js"
+  },
 
-  p.then( function(module) {
-    // console.log("library-one: module loaded, calling it's setup",src );
-    module.default( vz );
-  });
-  // todo: create new promise
-
-  return p;
-}
-
-export default function setup(vz) {
-  var promises = [];
-
-  for (var i=0; i<arr.length; i++) {
-    try {
-      promises.push( load( arr[i] ) );
-    } catch (err) {
-      console.error("library-one: failed to import",arr[i],err );
-    }
+  "points-game": {
+    title: "Points game algorythm",
+    info: "....",
+    url: "https://viewlang.ru/viewzavr-apps/vr-points-game/points-game/init.js"
   }
 
-  return Promise.allSettled( promises );
-}
+  };
 
+  if (player) player.addModulesTable( table );
+}

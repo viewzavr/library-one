@@ -9,7 +9,6 @@ and thus make them available to everyone who import this library.
 import setup_library_one from "https://cdn.jsdelivr.net/gh/viewzavr/library-one@master/init.js";
 setup_library_one(vz).then( function() {
  ....
- vz.restoreFromHash();
  } );
 ```
 

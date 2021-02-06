@@ -24,7 +24,7 @@ export function setup( vz, player ) {
 
   };
 
-  if (player) player.addModulesTable( table );
+  if (player) player.addPackagesTable( table );
   else
-  if (typeof(vzPlayer) != "undefined") vzPlayer.addModulesTable( table );
+  if (typeof(vzPlayer) != "undefined") vzPlayer.addPackagesTable( table );
 }

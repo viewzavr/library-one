@@ -6,7 +6,8 @@ export function setup( vz, player ) {
   "vis-comps": {
     title: "Visualization components",
     info: "....",
-    url: "https://viewlang.ru/viewzavr-apps/visualization-components/init.js"
+    //url: "https://viewlang.ru/viewzavr-apps/visualization-components/init.js"
+    url: vz.getDir( import.meta.url ) + "../visualization-components/init.js"
   },
 
   "krakozabra": {

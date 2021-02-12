@@ -20,7 +20,19 @@ export function setup( vz, player ) {
     title: "Points game algorythm",
     info: "....",
     url: "https://viewlang.ru/viewzavr-apps/vr-points-game/points-game/init.js"
-  }
+  },
+  
+  "vr-cinema": {
+    title: "CinemaScience 3d viewer",
+    info: "....",
+    url: "https://viewlang.ru/viewzavr-apps/vr-cinema/src/cinema-viewzavr.js"
+  },
+
+  "vr-dubins": {
+    title: "Dubins cinema viewer",
+    info: "....",
+    url: "https://viewlang.ru/viewzavr-apps/vr-dubins/app.js"
+  }  
 
   };
 

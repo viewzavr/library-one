@@ -33,7 +33,7 @@ export function setup( vz, player ) {
     title: "Dubins cinema viewer",
     info: "....",
     url: "https://viewlang.ru/viewzavr-apps/vr-dubins/app.js"
-  }  
+  }
 
   };
 
